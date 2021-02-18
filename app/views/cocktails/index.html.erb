@@ -1,6 +1,13 @@
 
-<ul>
-  <% @cocktails.each do |cocktail| %>
-    <li><%= cocktail.name %></li>
-  <% end %>
-</ul>
+<div class="cocktail-list py-5-light">
+  <div class="container">
+    <div class="row">
+        <div class="col-md-4">
+          <% @cocktails.each do |cocktail| %>
+          <%= link_to cocktail.name %>
+          <img class="card-img-top" scr= "https://unsplash.com/photos/wyLp_6cKqqs">
+          <% end %>
+        </div>
+    </div>
+  </div>
+</div>
